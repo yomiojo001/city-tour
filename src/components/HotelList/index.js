@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Tour from "../Tour";
+import Hotel from "../Hotel";
 import "./tourlist.scss";
 import {tourData} from "../../tourData";
 
-export default class TourList extends Component {
+export default class HotelList extends Component {
 state = {
     tours: tourData
 };
@@ -23,7 +23,7 @@ removeTour = id =>{
         const {tours} = this.state;
 
         return (
-            <section className="tourlist">
+            <section className="hotel-list">
                 {
                     tours.map(tour =>(<Tour key={tour.id} tour={tour} 
                     removeTour={this.removeTour}></Tour>))
