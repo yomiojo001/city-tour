@@ -43,6 +43,9 @@
     h4{
         text-transform: capitalize;
         margin: 0.2rem 0 0.6rem;
+        .fa-star{
+            color: #e0d315;
+        }
     }
     h5{
         text-transform: capitalize;
@@ -52,5 +55,9 @@
             font-size: 1.2rem;
             cursor: pointer;
         }
+    }
+    a{
+        font-size: small;
+        text-decoration: none;
     }
 }

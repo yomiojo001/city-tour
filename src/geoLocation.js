@@ -1,9 +1,11 @@
 import React from 'react';
 import { usePosition } from 'use-position';
 
-export function Location () {
+export default function Location () {
 
     const{ latitude, longitude, timestamp, accuracy, error } = usePosition(true);
+
+    // console.log('longitude', longitude)
 
     return (
         <div>
@@ -16,5 +18,4 @@ export function Location () {
     )
 }
 
-export const location = {latitude: this.latitude, longitude: this.longitude}
 

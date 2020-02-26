@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as data from './geoLocation';
+import Location from './geoLocation';
 
 
 export default class fetchTourData extends Component {
@@ -54,12 +54,11 @@ export default class fetchTourData extends Component {
         this.getRestuarants();
     }
 
-    render() {
-        console.log(data);
+    render(props) {
         
         return (
             <div>
-                <h1>location</h1>
+                <Location />
             </div>
         )
     }
