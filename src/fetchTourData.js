@@ -48,11 +48,11 @@ export default class fetchTourData extends Component {
         .catch(err => console.log(err))
     }
 
-    componentDidMount(){
-        this.getTours();
-        this.getHotels();
-        this.getRestuarants();
-    }
+    // componentDidMount(){
+    //     this.getTours();
+    //     this.getHotels();
+    //     this.getRestuarants();
+    // }
 
     render(props) {
         
