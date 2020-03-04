@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import { Jumbotron, Button, Card, CardImg, Row, Col, Container, CardTitle, CardText, NavLink } from 'reactstrap';
 
-import bannerImg from '../../img/bann.jpg'
+import hotelImg from '../../img/hotelImg.jpg';
+import restaurantImg from '../../img/restaurant_img.jpg';
+import tourImg from '../../img/tour-img.jpg';
+import bannerImg from '../../img/bann.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -19,6 +22,34 @@ export default class Home extends Component {
                     <Button color="primary">Learn More</Button>
                     </p>
                 </Jumbotron>
+                <Container>
+                    <Row>
+                        <Col sm="4">
+                            <Card body>
+                            <CardImg top width="100%" src={hotelImg} alt="Card image cap" />
+                            <CardTitle></CardTitle>
+                            <CardText></CardText>
+                            <Button><NavLink to="/hotelist">View Hotel List</NavLink></Button>
+                            </Card>
+                        </Col>
+                        <Col sm="4">
+                            <Card body>
+                            <CardImg top width="100%" src={restaurantImg} alt="Card image cap" />
+                            <CardTitle></CardTitle>
+                            <CardText></CardText>
+                            <Button>View Restaurant List</Button>
+                            </Card>
+                        </Col>
+                        <Col sm="4">
+                            <Card body>
+                            <CardImg top width="100%" src={tourImg} alt="Card image cap" />
+                            <CardTitle></CardTitle>
+                            <CardText></CardText>
+                            <Button>View Tour List</Button>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Container>
 
             </div>
         )
