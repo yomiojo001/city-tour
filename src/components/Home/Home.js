@@ -28,7 +28,7 @@ export default class Home extends Component {
                             <CardImg top width="100%" src={hotelImg} alt="Card image cap" />
                             <CardTitle className="mt-1" style={{fontSize:"1.2rem", fontWeight: "bold", color:"#82b240"}}>Hotels</CardTitle>
                             <CardText className="text-primary">Hotels around you haven't discovered yet...</CardText>
-                            <CardLink href="/hotellist"><Button>View Hotel List</Button></CardLink>
+                            <CardLink href="/hotellist" to="/hotellist"><Button>View Hotel List</Button></CardLink>
                             </Card>
                         </Col>
                         <Col sm="4">
@@ -36,7 +36,7 @@ export default class Home extends Component {
                             <CardImg top width="100%" src={restaurantImg} alt="Card image cap" />
                             <CardTitle className="mt-1" style={{fontSize:"1.2rem", fontWeight: "bold", color:"#82b240"}}>Restaurants</CardTitle>
                             <CardText className="text-primary">Thinking of a new place to eat...</CardText>
-                            <CardLink href="/restaurantlist"><Button>View Restaurant List</Button></CardLink>
+                            <CardLink href="/restaurantlist" to="/hotellist"><Button>View Restaurant List</Button></CardLink>
                             </Card>
                         </Col>
                         <Col sm="4">
@@ -44,7 +44,7 @@ export default class Home extends Component {
                             <CardImg top width="100%" src={tourImg} alt="Card image cap" />
                             <CardTitle className="mt-1" style={{fontSize:"1.2rem", fontWeight: "bold", color:"#82b240"}}>Tours</CardTitle>
                             <CardText className="text-primary">Wonder where to visit this weekend...</CardText>
-                            <CardLink href="/tourlist"><Button>View Tour List</Button></CardLink>
+                            <CardLink href="/tourlist" to="/hotellist"><Button>View Tour List</Button></CardLink>
                             </Card>
                         </Col>
                     </Row>

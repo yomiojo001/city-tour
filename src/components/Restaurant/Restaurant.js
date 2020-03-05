@@ -18,14 +18,14 @@ export default class Restaurant extends Component {
         // const distance = num.toFixed(2);
         const {removeRestaurant} = this.props;
         return (
-            <article className="hotel">
+            <article className="restaurant">
                 <div className="img-container">
                     <img src={img === undefined ? '' : img} alt={caption === undefined ? '' : caption} />
                     <span className="close-btn" onClick={() => removeRestaurant(id)}>
                         <i className="fas fa-window-close"/>
                     </span>
                 </div>
-                <div className="hotel-info">
+                <div className="restaurant-info">
                     <h3>{name}</h3>
                     <h4>{city}</h4>
                     <h4>{restaurantClass} <i className="fas fa-star" /></h4>
