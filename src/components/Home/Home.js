@@ -28,7 +28,7 @@ export default class Home extends Component {
                             <CardImg top width="100%" src={hotelImg} alt="Card image cap" />
                             <CardTitle className="mt-1" style={{fontSize:"1.2rem", fontWeight: "bold", color:"#82b240"}}>Hotels</CardTitle>
                             <CardText className="text-primary">Hotels around you haven't discovered yet...</CardText>
-                            <CardLink href="/hotelist"><Button>View Hotel List</Button></CardLink>
+                            <CardLink href="/hotellist"><Button>View Hotel List</Button></CardLink>
                             </Card>
                         </Col>
                         <Col sm="4">
