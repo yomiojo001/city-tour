@@ -21,7 +21,7 @@ class App extends Component {
             <Route path="/restaurantlist" component={RestaurantList} />
             <Route path="/tourlist" component={Tourlist} />
           </Switch>
-          <FetchTourData />
+          {/* <FetchTourData /> */}
           <Footer />
         </React.Fragment>
       </Router>

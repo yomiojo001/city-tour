@@ -1,0 +1,25 @@
+@import "../../index.scss";
+
+
+.btn-secondary{
+    background-color: transparent !important;
+    &:hover{
+        background-color: $mainGreen !important;
+        transition: all 0.3s linear;
+        box-shadow: 0 5px 15px $mainGreen !important;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+}
+.card:hover{
+    margin-top:1rem !important;
+    transition: all 0.3s linear;
+}
+.card-link{
+    color: $mainGrey !important;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.3s linear; 
+    &:hover{
+        color: $mainGreen !important;
+    }
+}
