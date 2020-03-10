@@ -14,24 +14,25 @@ const AppNavbar = () => {
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
+
   return (
     <div>
       <Navbar dark>
         <NavbarBrand href="/" className="mr-auto"><img src={logo} alt="city tours company" /></NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2 text-right" />
         <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
+          <Nav navbar onSelect={!toggleNavbar}>
             <NavItem>
-              <NavLink className="nav-link" href="/home"  to="/home">Home</NavLink>
+              <NavLink className="nav-link" to="/"  exact>Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" href="/hotellist"  to="/hotellist">Hotel</NavLink>
+              <NavLink className="nav-link" to="/hotellist">Hotel</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" href="/restaurantlist"  to="/restaurantlist">Restaurant</NavLink>
+              <NavLink className="nav-link" to="/restaurantlist">Restaurant</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" href="/tourlist"  to="/tourlist">Tours</NavLink>
+              <NavLink className="nav-link" to="/tourlist">Tours</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

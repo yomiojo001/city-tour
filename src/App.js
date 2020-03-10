@@ -6,7 +6,6 @@ import Tourlist from "./components/TourList";
 import Home from './components/Home'
 import HotelList from './components/HotelList';
 import RestaurantList from './components/RestaurantList';
-import FetchTourData from "./fetchTourData";
 import Footer from './components/Footer/Footer';
 
 class App extends Component {
@@ -21,7 +20,6 @@ class App extends Component {
             <Route path="/restaurantlist" component={RestaurantList} />
             <Route path="/tourlist" component={Tourlist} />
           </Switch>
-          {/* <FetchTourData /> */}
           <Footer />
         </React.Fragment>
       </Router>

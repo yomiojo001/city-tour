@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Location from './geoLocation';
+import Location from './GeoLocation';
 
 
 export default class fetchTourData extends Component {
