@@ -1,11 +1,16 @@
 @import "../../index.scss";
 
-
+.card{
+    background-color: $mainGrey;
+    box-shadow: 0 5px 15px $mainBlack !important;
+}
 .btn-secondary{
-    background-color: transparent !important;
+    background-color: $mainGreen !important;
+    border: none !important;
     &:hover{
-        background-color: $mainGreen !important;
+        background-color: transparent !important;
         transition: all 0.3s linear;
+        color: $mainGreen;
         box-shadow: 0 5px 15px $mainGreen !important;
         transition: box-shadow 0.3s ease-in-out;
     }

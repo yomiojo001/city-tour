@@ -21,18 +21,18 @@ const AppNavbar = () => {
         <NavbarBrand href="/" className="mr-auto"><img src={logo} alt="city tours company" /></NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2 text-right" />
         <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar onSelect={!toggleNavbar}>
+          <Nav navbar>
             <NavItem>
-              <NavLink className="nav-link" to="/"  exact>Home</NavLink>
+              <NavLink className="nav-link" to="/" onClick={toggleNavbar} exact>Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/hotellist">Hotel</NavLink>
+              <NavLink className="nav-link" onClick={toggleNavbar} to="/hotellist">Hotel</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/restaurantlist">Restaurant</NavLink>
+              <NavLink className="nav-link" onClick={toggleNavbar} to="/restaurantlist">Restaurant</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/tourlist">Tours</NavLink>
+              <NavLink className="nav-link" onClick={toggleNavbar} to="/tourlist">Tours</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
